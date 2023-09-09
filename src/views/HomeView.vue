@@ -1,18 +1,40 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="Home" class="flex flex-col h-screen">
+	<div class="m-3 mb-auto">
+		<div class="grid grid-cols-2 gap-3 my-3">
+			<ServiceSelectLarge 
+				text="Ride"
+				imageWidth= "74"
+				image="ride"
+				promo="true"
+			/>
+			<ServiceSelectLarge 
+				text="Food"
+				imageWidth= "72"
+				image="food"
+			/>
+		</div>
+		<div class="grid grid-cols-4 gap-3 my-3">
+			<ServiceSelectSmall
+				text="2 Wheels"
+				image="2wheels" />
+			<ServiceSelectSmall
+				text="Transit"
+				image="transit" />
+			<ServiceSelectSmall
+				text="Travel"
+				image="travel" />
+			<ServiceSelectSmall
+				text="Reserve"
+				image="reserve" />
+			
+		</div>
+	</div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script setup>
+import ServiceSelectLarge from '../components/ServiceSelectLarge.vue';
+import ServiceSelectSmall from '../components/ServiceSelectSmall.vue';
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
 </script>
