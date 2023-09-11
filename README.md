@@ -1,5 +1,7 @@
 # get-me-there
 
+An Fully working Uber clone, using VueJs, NodeJs, axios, and tailwindCss
+
 ## Project setup
 ```
 npm install
@@ -20,5 +22,4 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
