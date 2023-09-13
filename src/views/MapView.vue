@@ -5,6 +5,9 @@
 		</div>
 		
 		<div id="MapView">
+			<div id="map">
+
+			</div>
 			<div id="VehicleType" class="w-full">
 				<div class="w-full h-2 border-t"></div>
 				<div class="w-full text-center border-t-2 p-1.5 text-gray-700 text-lg font-semibold">
@@ -41,14 +44,9 @@
 
 	const initializeMap = () => {
 		const map = new window.google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        minZoom: 3,
-        maxZoom: 17,
-        fullscreenControl: false,
-        zoomControl: false,
-        streetViewControl: false,
-        mapTypeControl: false,
-		});
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
 
 		console.log(map)
 	}
@@ -56,10 +54,12 @@
 
 <style lang="scss" scoped>
 	#MapView {
-		width:100%;
-		height: 45vh;
-		top: 0px;
-		left: 0px;
+		#map {
+			width:100%;
+			height: 45vh;
+			top: 0px;
+			left: 0px;
+		}
 		.background-color{
 			background-color: rgb(237, 237, 237);
 		}
